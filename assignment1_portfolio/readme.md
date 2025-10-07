@@ -33,7 +33,7 @@ It includes multiple sections like:
 
 ## 📷 **Preview**
 > The project includes multiple pages like `index.html`, `about.html`, `course.html`, and `projects.html` styled using Bootstrap components.
-
+https://pitp2weeksnoor.netlify.app/
 ---
 
 ---
