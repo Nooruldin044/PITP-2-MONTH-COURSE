@@ -105,7 +105,13 @@ Each task demonstrates HTML, CSS, and JavaScript concepts learned and applied in
 - Manipulating the DOM to dynamically show results.
 
 **👩‍💻 Developed by:** Noor Ul Din
+
+---
+  
 **📅 Course:** Peoples Information Technology Program (PITP)
+
+---
+
 **🏫 Institution:** University of Sindh
 
 
