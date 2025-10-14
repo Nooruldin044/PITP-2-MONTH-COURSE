@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS Styling and Layout</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <h1>CSS Styling and Layout</h1>
+        <p>Demonstrating CSS classes and box model implementation</p>
+      </header>
+
+      <main>
+        <section>
+          <h2>1. Custom Paragraph Styling</h2>
+          <p class="styled-paragraph">
+            This paragraph demonstrates the custom CSS class with specific font
+            (Georgia), color (#2c3e50), and text alignment (justified). Notice
+            the left border, subtle shadow, and increased line height for better
+            readability.
+          </p>
+
+          <p class="styled-paragraph">
+            Here's another paragraph using the same CSS class. The consistent
+            styling creates visual harmony across all paragraphs with this
+            class. The background color and padding make the text stand out
+            while maintaining excellent readability.
+          </p>
+
+          <div class="code-block">
+            /* Custom paragraph class */ .styled-paragraph { font-family:
+            'Georgia', serif; color: #2c3e50; text-align: justify; line-height:
+            1.8; margin-bottom: 20px; padding: 15px; background-color: #fff;
+            border-left: 4px solid #3498db; box-shadow: 0 2px 4px rgba(0, 0, 0,
+            0.05); }
+          </div>
+        </section>
+
+        <section>
+          <h2>2. Box Model Layout</h2>
+          <p>
+            The CSS box model consists of content, padding, border, and margin.
+            Below is a visual representation:
+          </p>
+
+          <div class="box-model-labels">
+            <span>Margin</span>
+            <span>Border</span>
+            <span>Padding</span>
+            <span>Content</span>
+          </div>
+
+          <div class="box-model-visual"></div>
+
+          <p>
+            Here are three elements with different margin, padding, and border
+            values:
+          </p>
+
+          <div class="box-model-demo">
+            <div class="box box1">
+              <h3>Box 1</h3>
+              <p>This box has:</p>
+              <ul>
+                <li>Margin: 10px (all sides)</li>
+                <li>Padding: 20px (all sides)</li>
+                <li>Border: 2px solid red</li>
+              </ul>
+            </div>
+
+            <div class="box box2">
+              <h3>Box 2</h3>
+              <p>This box has:</p>
+              <ul>
+                <li>Margin: 15px (top/bottom) 25px (left/right)</li>
+                <li>Padding: 30px (top/bottom) 20px (left/right)</li>
+                <li>Border: 3px dashed green</li>
+              </ul>
+            </div>
+
+            <div class="box box3">
+              <h3>Box 3</h3>
+              <p>This box has:</p>
+              <ul>
+                <li>Margin: 5px (top) 15px (left/right) 25px (bottom)</li>
+                <li>Padding: 15px (top) 25px (left/right) 35px (bottom)</li>
+                <li>Border: 1px solid orange</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="code-block">
+            /* Box model examples */ .box1 { border: 2px solid #e74c3c; margin:
+            10px; padding: 20px; } .box2 { border: 3px dashed #2ecc71; margin:
+            15px 25px; padding: 30px 20px; } .box3 { border: 1px solid #f39c12;
+            margin: 5px 15px 25px; padding: 15px 25px 35px; }
+          </div>
+        </section>
+      </main>
+    </div>
+  </body>
+</html>

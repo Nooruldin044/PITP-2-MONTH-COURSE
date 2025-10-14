@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FlexBox Navigation Bar & Grid Photo Gallery</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+      <div class="nav-container">
+        <a href="#" class="logo">FlexBox<span>Grid Gallery</span></a>
+
+        <ul class="nav-menu">
+          <li class="nav-item">
+            <a href="#" class="nav-link active">Home</a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link">Gallery</a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link">Categories</a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link">About</a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link">Contact</a>
+          </li>
+        </ul>
+
+        <div class="hamburger">
+          <i class="fas fa-bars"></i>
+        </div>
+
+      </div>
+    </nav>
+
+     <!-- Header -->
+    <header>
+        <div class="container">
+            <h1>Responsive Web Design</h1>
+            <p class="subtitle">Flexbox Navigation & Grid Photo Gallery</p>
+        </div>
+    </header>
+
+
+    <div class="container">
+      <!-- Photo Gallery -->
+      <section class="gallery-section">
+        <h2 class="section-title">Photo Gallery</h2>
+        <div class="gallery">
+          <div class="gallery-item">
+            <img
+              src="./images/1.avif"
+              alt="Mountain Landscape"
+              class="gallery-img"
+            />
+            <div class="gallery-caption">
+              <h3>Mountain Landscape</h3>
+              <p>Beautiful mountain view at sunrise</p>
+            </div>
+          </div>
+
+          <div class="gallery-item">
+            <img
+              src="./images/2.avif"
+              alt="Forest"
+              class="gallery-img"
+            />
+            <div class="gallery-caption">
+              <h3>Forest Path</h3>
+              <p>Sunlight filtering through trees</p>
+            </div>
+          </div>
+
+          <div class="gallery-item">
+            <img
+              src="./images/3.avif"
+              alt="Lake"
+              class="gallery-img"
+            />
+            <div class="gallery-caption">
+              <h3>Serene Lake</h3>
+              <p>Calm waters reflecting the sky</p>
+            </div>
+          </div>
+
+          <div class="gallery-item">
+            <img
+              src="./images/4.avif"
+              alt="Northern Lights"
+              class="gallery-img"
+            />
+            <div class="gallery-caption">
+              <h3>Northern Lights</h3>
+              <p>Aurora borealis in the night sky</p>
+            </div>
+          </div>
+
+          <div class="gallery-item">
+            <img
+              src="./images/5.avif"
+              alt="Waterfall"
+              class="gallery-img"
+            />
+            <div class="gallery-caption">
+              <h3>Majestic Waterfall</h3>
+              <p>Powerful cascade in the wilderness</p>
+            </div>
+          </div>
+
+          <div class="gallery-item">
+            <img
+              src="./images/6.avif"
+              alt="Forest"
+              class="gallery-img"
+            />
+            <div class="gallery-caption">
+              <h3>Lush Forest</h3>
+              <p>Green canopy and rich vegetation</p>
+            </div>
+          </div>
+
+          <div class="gallery-item">
+            <img
+              src="./images/7.avif"
+              alt="Desert"
+              class="gallery-img"
+            />
+            <div class="gallery-caption">
+              <h3>Desert Dunes</h3>
+              <p>Golden sand patterns in the desert</p>
+            </div>
+          </div>
+
+          <div class="gallery-item">
+            <img
+              src="./images/8.avif"
+              alt="Coast"
+              class="gallery-img"
+            />
+            <div class="gallery-caption">
+              <h3>Rocky Coast</h3>
+              <p>Dramatic coastline with crashing waves</p>
+            </div>
+          </div>
+
+
+          <div class="gallery-item">
+            <img
+              src="./images/9.avif"
+              alt="Coast"
+              class="gallery-img"
+            />
+            <div class="gallery-caption">
+              <h3>Rocky Coast</h3>
+              <p>Dramatic coastline with crashing waves</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Code Examples -->
+      <section class="code-section">
+        <h3 class="code-title">Flexbox Navigation CSS</h3>
+        <pre><code>.nav-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-menu {
+    display: flex;
+    list-style: none;
+}
+
+@media (max-width: 768px) {
+    .nav-menu {
+        flex-direction: column;
+        position: fixed;
+        left: -100%;
+        top: 70px;
+        width: 100%;
+        transition: 0.3s;
+    }
+    
+    .nav-menu.active {
+        left: 0;
+    }
+}</code></pre>
+      </section>
+
+      <section class="code-section">
+        <h3 class="code-title">Grid Gallery CSS</h3>
+        <pre><code>.gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 25px;
+}
+
+@media (max-width: 768px) {
+    .gallery {
+        grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+        gap: 15px;
+    }
+}
+
+@media (max-width: 480px) {
+    .gallery {
+        grid-template-columns: 1fr;
+    }
+}</code></pre>
+      </section>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+      <div class="container">
+        <p>Responsive Navigation & Photo Gallery &copy; By Noor Ul Din</p>
+      </div>
+    </footer>
+
+    <script>
+      // Mobile menu toggle
+      const hamburger = document.querySelector(".hamburger");
+      const navMenu = document.querySelector(".nav-menu");
+
+      hamburger.addEventListener("click", () => {
+        navMenu.classList.toggle("active");
+      });
+
+      // Close menu when clicking on a link
+      document.querySelectorAll(".nav-link").forEach((link) => {
+        link.addEventListener("click", () => {
+          navMenu.classList.remove("active");
+        });
+      });
+    </script>
+  </body>
+</html>
