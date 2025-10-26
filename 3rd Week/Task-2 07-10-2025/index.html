@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Button and Form Example</title>
+
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        padding: 20px;
+      }
+      p {
+        font: bold 18px Arial, sans-serif;
+        color: darkblue;
+        transition: color 0.3s;
+
+      }
+      button {
+        margin-top: 10px;
+        padding: 8px 15px;
+        font-size: 16px;
+        cursor: pointer;
+      }
+    </style>
+  </head>
+  <body>
+    <h2>1. Change Paragraph Color</h2>
+    <p id="myPara">
+      This paragraph will change color when you click the button.
+    </p>
+    <button onclick="changeColor()">Change Color</button>
+
+    <h2>2. Display User Input with Alert</h2>
+    <form onsubmit="showAlert(event)">
+      <label for="userInput">Enter User Input: </label>
+      <input type="text" id="userInput" required />
+      <br><br>
+      <button type="submit">Submit</button>
+    </form>
+
+    <script src="script.js"></script>
+  </body>
+</html>

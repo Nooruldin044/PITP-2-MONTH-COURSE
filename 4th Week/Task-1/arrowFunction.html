@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Arrow Function + Destructuring</title>
+  </head>
+  <body>
+    <h2>Arrow Function + Destructuring</h2>
+    <h3 id="demo1"></h3>
+    <h4 id="demo2"></h4>
+
+    <script>
+      // Arrow Function to calculate total:
+      const calculateTotal = (price, taxRate) => {
+        const tax = price * taxRate;
+        const total = price + tax;
+        return total;
+      };
+      let demo1 = document.getElementById("demo1");
+      demo1.innerHTML =(calculateTotal(100, 0.08));
+
+      // destructuring
+
+      const person = {
+        firstName: "Noor",
+        lastName: "Din",
+        age: 22,
+      };
+
+      // Destructure the object
+      const { firstName, lastName, age } = person;
+      const sentence = `My name is ${firstName} ${lastName}, and I am ${age} years old.`;
+
+      let demo2 = document.getElementById("demo2").innerHTML = sentence;
+    </script>
+  </body>
+</html>

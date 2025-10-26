@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Forecast App</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1 class="app-title"><i class="fas fa-cloud-sun"></i>Weather Forecast</h1>
+        
+        <div class="search-container">
+            <div class="search-box">
+                <input type="text" class="search-input" placeholder="Enter city name..." id="cityInput">
+                <button class="search-button" id="searchButton"><i class="fas fa-search"></i> Search</button>
+            </div>
+        </div>
+        
+        <div class="unit-toggle">
+            <button class="unit-button active" id="celsiusBtn">°C</button>
+            <button class="unit-button" id="fahrenheitBtn">°F</button>
+        </div>
+        
+        <div id="errorMessage" class="error-message" style="display: none;"></div>
+        
+        <div id="loading" class="loading" style="display: none;">
+            <i class="fas fa-spinner fa-spin"></i> Loading weather data...
+        </div>
+        
+        <div id="weatherData" style="display: none;">
+            <div class="location-info">
+                <h2 class="city-name" id="cityName"></h2>
+                <p class="date-time" id="dateTime"></p>
+            </div>
+            
+            <div class="weather-card">
+                <div class="current-weather">
+                    <div class="weather-main">
+                        <div class="weather-icon">
+                            <i id="weatherIcon" class="fas fa-sun"></i>
+                        </div>
+                        <div class="temperature-info">
+                            <div class="temperature" id="temperature">24°</div>
+                            <div class="weather-description" id="weatherDescription">Clear Sky</div>
+                        </div>
+                    </div>
+                    
+                    <div class="weather-details">
+                        <div class="detail-item">
+                            <span>Feels Like</span>
+                            <span id="feelsLike">25°</span>
+                        </div>
+                        <div class="detail-item">
+                            <span>Humidity</span>
+                            <span id="humidity">65%</span>
+                        </div>
+                        <div class="detail-item">
+                            <span>Wind Speed</span>
+                            <span id="windSpeed">5.5 km/h</span>
+                        </div>
+                        <div class="detail-item">
+                            <span>Pressure</span>
+                            <span id="pressure">1015 hPa</span>
+                        </div>
+                        <div class="detail-item">
+                            <span>Visibility</span>
+                            <span id="visibility">10 km</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <h3 style="margin-bottom: 15px; text-align: center;">5-Day Forecast</h3>
+                <div class="forecast-container" id="forecastContainer">
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="script.js"></script>
+</body>
+</html>

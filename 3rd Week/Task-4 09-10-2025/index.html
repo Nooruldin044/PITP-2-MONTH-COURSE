@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NoorDev</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">
+                <div class="logo-icon">ND</div>
+                <span>NoorDev</span>
+            </div>
+            
+            <button class="mobile-menu-btn">☰</button>
+            
+            <div class="nav-links">
+                <a href="#" class="active">Home</a>
+                <a href="#contact">Contact</a>
+                <a href="#gallery">Image Gallery</a>
+                <a href="#FAQ">FAQ</a>
+            </div>
+        </div>
+    </nav>
+
+    <header>
+        <div class="container">
+            <h1>Welcome to NoorDev</h1>
+            <p>Explore My own work for web development, with HTML, CSS, JS</p>
+        </div>
+    </header>
+
+    <div class="container">
+        <section id="home">
+            <h2>About NoorDev</h2>
+            <p>Welcome to NoorDev, My First Interactive Website During the "PITP" Program by Mehran University of Engineering & Technology .</p>
+            
+            <p>Built with HTML, CSS, and JavaScript, after completion of 3 weeks of my course at PITP</p>
+        </section>
+
+        <section id="contact">
+            <h2>Contact Form with Validation</h2>
+            <p>Fill out the form below. All fields are required..!</p>
+            
+            <form id="contactForm">
+                <div class="form-group">
+                    <label for="name">Full Name</label>
+                    <input type="text" id="name" placeholder="Enter your full name">
+                    <div class="error" id="nameError">Please enter your full name</div>
+                </div>
+                
+                <div class="form-group">
+                    <label for="email">Email Address</label>
+                    <input type="email" id="email" placeholder="Enter your email">
+                    <div class="error" id="emailError">Please enter a valid email address</div>
+                </div>
+                
+                <div class="form-group">
+                    <label for="phone">Phone Number</label>
+                    <input type="tel" id="phone" placeholder="Enter your phone number">
+                    <div class="error" id="phoneError">Please enter a valid phone number</div>
+                </div>
+                
+                <div class="form-group">
+                    <label for="subject">Subject</label>
+                    <select id="subject">
+                        <option value="">Select a subject</option>
+                        <option value="general">General Inquiry</option>
+                        <option value="support">Technical Support</option>
+                        <option value="feedback">Feedback</option>
+                        <option value="other">Other</option>
+                    </select>
+                    <div class="error" id="subjectError">Please select a subject</div>
+                </div>
+                
+                <div class="form-group">
+                    <label for="message">Message</label>
+                    <textarea id="message" rows="5" placeholder="Enter your message"></textarea>
+                    <div class="error" id="messageError">Please enter your message (minimum 10 characters)</div>
+                </div>
+                
+                <button type="submit">Submit Form</button>
+                
+                <div class="success-message" id="successMessage">
+                    Thank you! Your message has been sent successfully.
+                </div>
+            </form>
+        </section>
+
+        <section id="gallery">
+            <h2>Image Gallery</h2>
+            <div class="slider-container">
+                <div class="slider" id="slider">
+                    <div class="slide">
+                        <img src="./images/1.jpg" alt="Mountain Landscape">
+                        <div class="slide-caption">Beautiful Gilgit Baltistan</div>
+                    </div>
+                    <div class="slide">
+                        <img src="./images/2.jpg" alt="Forest">
+                        <div class="slide-caption">Jehlum Lake</div>
+                    </div>
+                    <div class="slide">
+                        <img src="./images/3.jpg" alt="Lake">
+                        <div class="slide-caption">A Sunset In Mountain</div>
+                    </div>
+                    <div class="slide">
+                        <img src="./images/4.jpg" alt="Sunset">
+                        <div class="slide-caption">Breathtaking Sunset</div>
+                    </div>
+                </div>
+                
+                <div class="slider-controls">
+                    <button class="slider-btn" id="prevBtn">Previous</button>
+                    <button class="slider-btn" id="nextBtn">Next</button>
+                </div>
+                
+                <div class="slider-dots" id="sliderDots"> </div>
+            </div>
+        </section>
+
+        <section id="FAQ">
+            <h2>Frequently Asked Questions</h2>
+            
+            <div class="toggle-section">
+                <div class="toggle-header" id="toggle1">
+                    <span>About my 3 week course</span>
+                    <span>+</span>
+                </div>
+                <div class="toggle-content" id="content1">
+                    <p>My 3-week web development course at PITP "People Information Technology Program", is Initialized and being Taught by "Mehran University of Engineering & Technology" by Best Mentors like Sir Chettan Kumar and Other faculty. In these 3 weeks We Focused on:</p>
+                    <ul>
+                        <li>HTML5 and semantic markup</li>
+                        <li>CSS3 with Flexbox and Grid layouts</li>
+                        <li>JavaScript fundamentals and DOM manipulation</li>
+                        <li>Form validation and user interaction</li>
+                        <li>Responsive web design principles</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="toggle-section">
+                <div class="toggle-header" id="toggle2">
+                    <span>What I learned in 3 weeks</span>
+                    <span>+</span>
+                </div>
+                <div class="toggle-content" id="content2">
+                    <p>During the intensive 3-week course, I gained practical skills in:</p>
+                    <ul>
+                        <li><strong>HTML5:</strong> Semantic HTML structure, Basic Tags, Headings, Sections, Forms, Ordered & Un-Ordered Lists, Select tag and much more tags</li>
+                        <li><strong>CSS3:</strong> Advanced styling, animations, responsive design with media queries</li>
+                        <li><strong>JavaScript:</strong> Variables, functions, events, DOM manipulation, form validation</li>
+                        <li><strong>Project Development:</strong> Made Hands-On projects like Personal Portfolio</li>
+                        <li><strong>Problem Solving:</strong> Debugging code and finding solutions to development challenges</li>
+                    </ul>
+                    <p>This website is a demonstration of the skills acquired during the course, showcasing form validation, interactive elements, and responsive design.</p>
+                </div>
+            </div>
+            
+            <div class="toggle-section">
+                <div class="toggle-header" id="toggle3">
+                    <span>What I will Learn Next?</span>
+                    <span>+</span>
+                </div>
+                <div class="toggle-content" id="content3">
+                    <p>After completing the foundational course, We plan to continue learning:</p>
+                    <ol>
+                        <li>Advanced JavaScript (ES6+ features, async programming)</li>
+                        <li>Front-end frameworks like React or Vue.js</li>
+                        <li>Back-end development with Node.js</li>
+                        <li>Database management and API development</li>
+                        <li>Version control with Git and GitHub</li>
+                    </ol>
+                    <p>My goal is to become a full-stack developer capable of building complete web applications.</p>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 NoorDev. All rights reserved.</p>
+        </div>
+    </footer>
+
+
+    <script src="script.js"></script>
+</body>
+</html>

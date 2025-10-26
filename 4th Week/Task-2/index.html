@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Random User Generator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Random User Generator</h1>
+            <p class="subtitle">Click the button to fetch a random user profile</p>
+        </header>
+        
+        <div class="content">
+            <div class="error-message" id="errorMessage">
+                Failed to fetch user data. Please try again.
+            </div>
+            
+            <div class="loading" id="loadingMessage">
+                Loading user data...
+            </div>
+            
+            <div id="userDisplay" style="display: none;">
+                <div class="user-card">
+                    <img id="userImage" class="user-image" src="" alt="User Photo">
+                    <h2 id="userName" class="user-name"></h2>
+                    
+                    <div class="user-details">
+                        <div class="detail-item">
+                            <div class="detail-label">Email</div>
+                            <div id="userEmail" class="detail-value"></div>
+                        </div>
+                        <div class="detail-item">
+                            <div class="detail-label">Phone</div>
+                            <div id="userPhone" class="detail-value"></div>
+                        </div>
+                        <div class="detail-item">
+                            <div class="detail-label">Location</div>
+                            <div id="userLocation" class="detail-value"></div>
+                        </div>
+                        <div class="detail-item">
+                            <div class="detail-label">Date of Birth</div>
+                            <div id="userDob" class="detail-value"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="button-container">
+                <button id="fetchButton" class="btn">Get Random User</button>
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <script src="script.js"></script>
+</body>
+</html>
